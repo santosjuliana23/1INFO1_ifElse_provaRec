@@ -13,10 +13,21 @@
     */
 
     //ENTRADA
-
+    const c1 = prompt (`informe a categoria do carro que deseja comprar.(HA(hatch), SE(sedan), SU(suv))`).toUpperCase();
 
     //PROCESSAMENTO
-
+    if(c1 == "HA") {
+        alert(`para menores de 30 anos.`);
+    }
+    else if(c1 == "SE") {
+        alert(`para maiores de 70 anos.`);
+    }
+    else if(c1 == "SU") {
+        alert(`carro para a família.`);
+    }
+    else {
+        alert(`isso não é uma categoria, inválido.`);
+    }
 
     //SAÍDA
 

@@ -10,11 +10,18 @@
     */
 
     //ENTRADA
-
+    const dias = Number(prompt(`informe quantos dias deseja ficar com a bicicleta.`));
 
     //PROCESSAMENTO
-
-
+    if(dias<=7) {
+        alert(`você ficará ${dias} dias com a bicicleta e o preço final é de ${dias * 15}.`);
+    }
+    else if (dias>=8) {
+        alert(`você ficará ${dias} dias com a bicicleta e o preço final é de ${dias * 12}.`);
+    }
+    else { 
+        alert(`inválido.`);
+    }
     //SAÍDA
 
     

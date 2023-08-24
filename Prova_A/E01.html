@@ -10,9 +10,25 @@
     */
 
     //ENTRADA
-
+    const computador = Number(prompt(`informe o preço do computador.`)).toFixed(2).replace(",",".");
+    const formadepagamento = prompt(`informe a forma de pagamento.(B = boleto, D = dinheiro, P = pix.)`).toUpperCase();
+    const c1 = 0.03 * computador;
+    const c2 = 0.05 * computador;
+    const c3 = 0.10 * computador;
 
     //PROCESSAMENTO
+    if( formadepagamento == "B") {
+        alert(`o valor final é ${computador - c1}.`)
+    }
+    else if (formadepagamento == "D") {
+        alert(`o valor final é ${computador - c2}.`)
+    }
+    else if (formadepagamento == "P") {
+        alert(`o valor final é ${computador - c3}.`)
+    }
+    else { 
+        alert(`inválido.`);
+    }
 
 
     //SAÍDA
